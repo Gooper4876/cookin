@@ -34,8 +34,8 @@
         <recipes>
             Recipes:
         </recipes>
-        <button type="submit"><i class="fa fa-search">Filtr button</i></button><button type="submit"><i
-                class="fa fa-search">Add recipes button</i></button>
+        <button type="submit"><i class="fa fa-search">Filtr button</i></button><button type="button"><i
+        href="https://pl.wikipedia.org/wiki/Bananowy_ekwiwalent#/media/Plik:Banana-Single.jpg" class="fa fa-search">Add recipes button</i></button>
     <p>
         <a href="https://pl.wikipedia.org/wiki/Bananowy_ekwiwalent#/media/Plik:Banana-Single.jpg">
             <img src="Temmie.jpeg">
@@ -96,7 +96,10 @@
 
     if($conn->connect_error) {
         die("Połączenie nieudane". $conn->connect_error);
+    } else {
+        echo"it failed you dummy";
     }
+    $conn->close();
     ?>
 </body>
 
