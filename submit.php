@@ -2,17 +2,21 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "platforma_kulinarna_1K";
+$dbname = "tem";
 
-if(conn->connect_error) {
+$conn = new mysqli($servername, $username, $password, $dbname);
+if($conn->connect_error) {
     die("bruh". $conn->connect_error);
 }
+
+
+
 $title = $_POST["title"];
 $description = $_POST["description"];
 
-$sql = "INSERT INTO przepisy(tytul) VALUES ('$title)";
+$sql = "INSERT INTO przepisy(title) VALUES ('$title)";
 
-if (conn()->query($sql) === TRUE) {
+if ($conn->query($sql) === TRUE) {
     echo "Yippe you did it";
 } else {
     echo "bruh";

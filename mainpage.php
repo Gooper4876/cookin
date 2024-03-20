@@ -99,6 +99,17 @@
     } else {
         echo"it failed you dummy";
     }
+
+    $sql = "SELECT * FROM przepisy";
+    $result = $conn->query($sql);
+
+    echo"<ol>";
+    while($row = $result->fetch_assoc()) {
+        echo "<li>".$row["tytul"]."".$row["</li>"].
+    }
+    
+    echo"</ol>";
+
     $conn->close();
     ?>
 </body>
