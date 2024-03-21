@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>cook the page</title>
-    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="css mai.css">
     <style>
         @import url('https://fonts.cdnfonts.com/css/public-pixel');
     </style>
@@ -34,8 +34,11 @@
         <recipes>
             Recipes:
         </recipes>
-        <button type="submit"><i class="fa fa-search">Filtr button</i></button><button type="button"><i
-        href="https://pl.wikipedia.org/wiki/Bananowy_ekwiwalent#/media/Plik:Banana-Single.jpg" class="fa fa-search">Add recipes button</i></button>
+    
+        
+        <form action="add recipe.php" method="POST" class="absolute">
+            <input type="submit" value="add a recipe">
+        </form>
     <p>
         <a href="https://pl.wikipedia.org/wiki/Bananowy_ekwiwalent#/media/Plik:Banana-Single.jpg">
             <img src="Temmie.jpeg">
@@ -91,24 +94,24 @@
     $username = "root"; //nazwa użytkownika bazy danych
     $password = ""; //hasło do bazy
     $dbname = "tem"; //nazwa bazy danych
-
+    
     $conn = new mysqli($servername, $username, $password, $dbname);
 
-    if($conn->connect_error) {
-        die("Połączenie nieudane". $conn->connect_error);
+    if ($conn->connect_error) {
+        die ("Connection failed, idiot" . $conn->connect_error);
     } else {
-        echo"it failed you dummy";
+        echo "Connection works";
     }
 
     $sql = "SELECT * FROM przepisy";
     $result = $conn->query($sql);
 
-    echo"<ol>";
-    while($row = $result->fetch_assoc()) {
-        echo "<li>".$row["tytul"]."".$row["</li>"].
+    echo "<ol>";
+    while ($row = $result->fetch_assoc()) {
+        echo "<li>" . $row["title"] . "</li>";
     }
-    
-    echo"</ol>";
+
+    echo "</ol>";
 
     $conn->close();
     ?>

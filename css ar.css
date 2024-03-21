@@ -1,0 +1,29 @@
+header{
+    font-size: 50px;
+    color: white;
+    border: 5px solid white;
+    width: 300px;
+    height: 60px;
+}
+body{
+    font-family: 'Public Pixel', sans-serif;
+    background-color: black;
+    color: white;
+}
+tem {
+    position: absolute;
+    top: 0;
+    left: 320px;
+    width: 100px;
+    height: 100px;
+}
+biiig{
+    font-size: 70px;
+}
+recipes{
+    font-size: 50px;
+}
+
+i{
+    font-family: 'Public Pixel', sans-serif;
+}

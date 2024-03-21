@@ -14,7 +14,7 @@ if($conn->connect_error) {
 $title = $_POST["title"];
 $description = $_POST["description"];
 
-$sql = "INSERT INTO przepisy(title) VALUES ('$title)";
+$sql = "INSERT INTO przepisy(title, description) VALUES ('$title', '$description')";
 
 if ($conn->query($sql) === TRUE) {
     echo "Yippe you did it";
