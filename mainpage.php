@@ -5,9 +5,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>cook the page</title>
-    <link rel="stylesheet" href="css mai.css">
+    <link rel="stylesheet" href="css/cssmain.css">
     <style>
-        @import url('https://fonts.cdnfonts.com/css/public-pixel');
+    @import url('https://fonts.cdnfonts.com/css/common-pixel');
     </style>
 </head>
 

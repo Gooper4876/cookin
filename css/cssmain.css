@@ -6,9 +6,8 @@ header{
     height: 60px;
 }
 body{
-    font-family: 'Public Pixel', sans-serif;
+    font-family: 'Common Pixel', sans-serif;
     background-color: black;
-    color: white;
 }
 tem {
     position: absolute;
@@ -25,9 +24,9 @@ recipes{
 }
 
 i{
-    font-family: 'Public Pixel', sans-serif;
+    font-family: 'Common Pixel', sans-serif;
 }
 input{
     font-size: 25px;
-    font-family: 'Public Pixel', sans-serif;
+    font-family: 'Common Pixel', sans-serif;
 }
