@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>cook the page</title>
-    <link rel="stylesheet" href="cssar.css">
+    <link rel="stylesheet" href="css ar.css">
     <style>
         @import url('https://fonts.cdnfonts.com/css/public-pixel');
     </style>

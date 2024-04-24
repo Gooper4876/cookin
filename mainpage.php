@@ -5,9 +5,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>cook the page</title>
-    <link rel="stylesheet" href="css/cssmain.css">
+    <link rel="stylesheet" href="css mai.css">
     <style>
-    @import url('https://fonts.cdnfonts.com/css/common-pixel');
+        @import url('https://fonts.cdnfonts.com/css/public-pixel');
     </style>
 </head>
 
@@ -72,7 +72,7 @@
             <img src="Temmie.jpeg">
         </a>
     </p>
-    [why they have blu bars]
+    [why they have ourple bars]
     </p>
     <p>
         <recipesearch>
@@ -89,11 +89,32 @@
     <p>
         also how to change style for search box and buttons
     </p>
+    <?php
+    $servername = "localhost"; //nazwa servera
+    $username = "root"; //nazwa użytkownika bazy danych
+    $password = ""; //hasło do bazy
+    $dbname = "tem"; //nazwa bazy danych
     
+    $conn = new mysqli($servername, $username, $password, $dbname);
+
+    if ($conn->connect_error) {
+        die ("Connection failed, idiot" . $conn->connect_error);
+    } else {
+        echo "Connection works";
+    }
+
+    $sql = "SELECT * FROM przepisy";
+    $result = $conn->query($sql);
+
+    echo "<ol>";
+    while ($row = $result->fetch_assoc()) {
+        echo "<li>" . $row["title"] . "</li>";
+    }
+
+    echo "</ol>";
+
+    $conn->close();
+    ?>
 </body>
-<?php
 
-include "display_produkt.php";
-
-?>
 </html>
