@@ -17,7 +17,10 @@
 
     echo "<ol>";
     while ($row = $result->fetch_assoc()) {
-        echo "<li>" . $row["title, description"] . "</li>";
+        echo "<li>";
+        echo $row["title"];
+        echo $row["description"];
+        echo "</li>";
     }
 
     echo "</ol>";
