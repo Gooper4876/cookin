@@ -19,6 +19,7 @@
     while ($row = $result->fetch_assoc()) {
         echo "<li>";
         echo $row["title"];
+        echo "&nbsp;";
         echo $row["description"];
         echo "</li>";
     }
