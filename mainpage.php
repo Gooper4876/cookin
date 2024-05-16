@@ -39,38 +39,13 @@
         <form action="add recipe.php" method="POST" class="absolute">
             <input type="submit" value="add a recipe">
         </form>
-    <p>
-        <a href="https://pl.wikipedia.org/wiki/Bananowy_ekwiwalent#/media/Plik:Banana-Single.jpg">
-            <img src="Temmie.jpeg">
-        </a>
-        <a href="https://pl.wikipedia.org/wiki/Bananowy_ekwiwalent#/media/Plik:Banana-Single.jpg">
-            <img src="Temmie.jpeg">
-        </a>
-        <a href="https://pl.wikipedia.org/wiki/Bananowy_ekwiwalent#/media/Plik:Banana-Single.jpg">
-            <img src="Temmie.jpeg">
-        </a>
+        <div class="flex">
+            <?php
+            include "recipes.php";
+            ?>
+        </div>
     </p>
-    <p>
-        <a href="https://pl.wikipedia.org/wiki/Bananowy_ekwiwalent#/media/Plik:Banana-Single.jpg">
-            <img src="Temmie.jpeg">
-        </a>
-        <a href="https://pl.wikipedia.org/wiki/Bananowy_ekwiwalent#/media/Plik:Banana-Single.jpg">
-            <img src="Temmie.jpeg">
-        </a>
-        <a href="https://pl.wikipedia.org/wiki/Bananowy_ekwiwalent#/media/Plik:Banana-Single.jpg">
-            <img src="Temmie.jpeg">
-        </a>
-    </p>
-    <p>
-        <a href="https://pl.wikipedia.org/wiki/Bananowy_ekwiwalent#/media/Plik:Banana-Single.jpg">
-            <img src="Temmie.jpeg">
-        </a>
-        <a href="https://pl.wikipedia.org/wiki/Bananowy_ekwiwalent#/media/Plik:Banana-Single.jpg">
-            <img src="Temmie.jpeg">
-        </a>
-        <a href="https://pl.wikipedia.org/wiki/Bananowy_ekwiwalent#/media/Plik:Banana-Single.jpg">
-            <img src="Temmie.jpeg">
-        </a>
+    <p>&nbsp;</p>
     </p>
     [why they have ourple bars]
     </p>
@@ -82,6 +57,7 @@
                 <button type="submit"><i class="fa fa-search">Search</i></button>
             </form>
         </recipesearch>
+
     </p>
     <p>
         thanks<img src="Temmie.jpeg">
@@ -89,9 +65,7 @@
     <p>
         also how to change style for search box and buttons
     </p>
-    <?php
-    include "recipes.php";
-    ?>
+    
 </body>
 
 </html>

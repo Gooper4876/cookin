@@ -31,3 +31,20 @@ input{
     font-size: 25px;
     font-family: 'Public Pixel', sans-serif;
 }
+
+a{
+
+    color: white;
+}
+
+.beans{
+    border: 5px solid white;
+    width: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2px;
+} 
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}

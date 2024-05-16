@@ -8,8 +8,6 @@
 
     if ($conn->connect_error) {
         die ("Connection failed, idiot" . $conn->connect_error);
-    } else {
-        echo "Connection works";
     }
 
     $sql = "SELECT * FROM przepisy";
@@ -17,11 +15,15 @@
 
     echo "<ol>";
     while ($row = $result->fetch_assoc()) {
-        echo "<li>";
+        echo "<div class='beans'>";
+        echo "<img src='Temmie.jpeg'>";
+        echo "<p>";
         echo $row["title"];
-        echo "&nbsp;";
+        echo "</p>";
+        echo "<p>";
         echo $row["description"];
-        echo "</li>";
+        echo "</p>";
+        echo "</div>";
     }
 
     echo "</ol>";
